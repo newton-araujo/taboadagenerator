@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Taboada</title>
+</head>
+<body>
+    <!--title-->
+
+    <h1>
+        TABOADA
+    </h1>
+    
+    <!--Main-->
+    <main class="main">
+        <!--Input and Information-->
+        <section class="informação">
+            <div class="input">
+                <label for="">Digite um número:</label>
+                <div>
+                    <input type="number" id="number" placeholder="Número">
+                    <button id="enviar" onclick="tabuada()">ENVIAR</button>
+                </div>
+            </div>
+            <!--Resume-->
+            <div class="resume">
+                <p>"A taboada, desenvolvida por João de Souza da Fonseca em 1592, 
+                    revolucionou o ensino da matemática ao organizar a multiplicação 
+                    em tabelas. Essa inovação simplificou cálculos e facilitou o 
+                    aprendizado, tornando-se uma ferramenta fundamental na educação 
+                    matemática por séculos."
+                </p>
+            </div>
+        </section>
+        <!--Exit-->
+        <section class="resultado">
+            <h3>RESULTADO:</h3>
+            <div id="result">
+
+            </div>
+        </section>
+
+        <script>
+            //Reset input
+            document.getElementById('enviar').addEventListener('click',  function(event) {
+                event.preventDefault();
+
+                document.getElementById('number').value = '';
+
+            } )
+        </script>
+    </main>
+
+    <script src="./assets/script.js"></script>
+</body>
+</html>

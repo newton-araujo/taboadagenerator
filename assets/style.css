@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: white;
+}
+
+body {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 5rem;
+}
+
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 10rem;
+}
+
+.informação {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+
+.informação .input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.informação .input label {
+    
+    font-weight: bold;
+}
+
+.informação .input #number {
+    margin-left: 1rem;
+    padding: 0.3rem 0.2rem;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 1rem 0 0 1rem;
+    font-size: 1rem;
+}
+
+.informação .input #enviar {
+    padding: 0.3rem 0.2rem;
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 0 1rem 1rem 0;
+    font-size: 1rem;
+    cursor: pointer;
+    color: white;
+    background: green;
+}
+
+.informação .resume {
+    margin: 1rem;
+    width: 25rem;
+    height: 10rem;
+    padding: 1rem;
+}
+
+.informação .resume p {
+    font-size: 1.1rem;
+}
+
+.resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    width: 20rem;
+
+}
+
+
+@media screen and (max-width:600px)  {
+    .main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informação .input {
+        display: flex;
+        flex-direction: column;
+    }
+}
